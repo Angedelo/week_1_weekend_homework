@@ -73,22 +73,22 @@ class TestPetShop < Minitest::Test
     }
   end
 
-  def test_pet_shop_name
-    name = pet_shop_name(@pet_shop)
-    assert_equal("Camelot of Pets", name)
-  end
-
+  # def test_pet_shop_name
+  #   name = pet_shop_name(@pet_shop)
+  #   assert_equal("Camelot of Pets", name)
+  # end
+  #
   # def test_total_cash
   #   sum = total_cash(@pet_shop)
   #   assert_equal(1000, sum)
   # end
-
+  #
   # def test_add_or_remove_cash__add
   #   add_or_remove_cash(@pet_shop,10)
   #   cash = total_cash(@pet_shop)
   #   assert_equal(1010, cash)
   # end
-
+  #
   # def test_add_or_remove_cash__remove
   #   add_or_remove_cash(@pet_shop,-10)
   #   cash = total_cash(@pet_shop)
@@ -111,10 +111,10 @@ class TestPetShop < Minitest::Test
   #   assert_equal(6, count)
   # end
 
-  # def test_all_pets_by_breed__found
-  #   pets = pets_by_breed(@pet_shop, "British Shorthair")
-  #   assert_equal(2, pets.count)
-  # end
+  def test_all_pets_by_breed__found
+    pets = pets_by_breed(@pet_shop, "British Shorthair")
+    assert_equal(2, pets.count)
+  end
 
   # def test_all_pets_by_breed__not_found
   #   pets = pets_by_breed(@pet_shop, "Dalmation")
